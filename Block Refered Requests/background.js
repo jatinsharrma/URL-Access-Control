@@ -1,9 +1,9 @@
 // Configuration - Update these URLs according to your needs
 const CONFIG = {
-    SOURCE_URL: 'https://google.com', // URL A - the source URL
+    SOURCE_URL: 'https://ROOT.com', // URL A - the source URL
     PROTECTED_URLS: [ // URL B(s) - the protected URLs
-        'https://silicongarage.in',
-        'http://silicongarage.in'
+        'https://URL1.com',
+        'https://URL2.com',
     ],
     ACCESS_DURATION: 30 * 60 * 1000, // 30 minutes in milliseconds
     CHECK_INTERVAL: 60 * 1000, // Check every minute
@@ -149,7 +149,7 @@ function isValidReferrer(referrer) {
         return false;
     }
 
-    const isValid = referrer.includes('google.com') || referrer.includes('www.google.com');
+    const isValid = referrer.includes('ROOT.com') || referrer.includes('www.ROOT.com');
     console.log('Referrer validation:', referrer, '→', isValid);
     return isValid;
 }

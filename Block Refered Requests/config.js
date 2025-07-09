@@ -3,12 +3,13 @@
 
 const EXTENSION_CONFIG = {
     // URL A - The source URL that users must come from
-    SOURCE_URL: 'https://google.com',
+    SOURCE_URL: 'https://ROOT.com',
 
     // URL B(s) - The protected URLs that require authorization
     // These can be complete URLs or domain patterns
     PROTECTED_URLS: [
-        'https://silicongarage.in'
+        'https://URL1.com',
+        'https://URL2.com',
         // Add more protected URLs as needed
     ],
 
